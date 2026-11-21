@@ -1,0 +1,40 @@
+# Cloudflare Pages redirects – giữ các URL cũ của WordPress không bị 404
+# Trang cũ -> vị trí mới
+/home/                 /                   301
+/contact-us/           /#contact           301
+/contact-us            /#contact           301
+/about-us/             /#leadership        301
+/about-us              /#leadership        301
+/capabilities/         /#what-we-do        301
+/capabilities          /#what-we-do        301
+/why-vietnam/          /investmentguide/   301
+/why-vietnam           /investmentguide/   301
+/faq/                  /investmentguide/   301
+
+# Trang mẫu / WooCommerce không dùng tới
+/sample-page/          /                   301
+/shop/                 /                   301
+/shop/*                /                   301
+/cart/                 /                   301
+/checkout/             /                   301
+/my-account/           /                   301
+/my-account/*          /                   301
+/wp-admin/*            /                   302
+/wp-login.php          /                   302
+/feed/                 /insight/           301
+
+# Bài viết cũ trên WordPress (WordPress đã ngừng) -> trang danh sách Insight
+/insight/the-4-fdi-engines-of-vietnam/  /insight/  301
+/insight/the-4-fdi-engines-of-vietnam  /insight/  301
+/insight/vietnams-semiconductor-ai-hub-the-strategic-landing-guide/  /insight/  301
+/insight/vietnams-semiconductor-ai-hub-the-strategic-landing-guide  /insight/  301
+/insight/developing-the-aerospace-industrial-ecosystem-at-long-thanh-dong-nai/  /insight/  301
+/insight/developing-the-aerospace-industrial-ecosystem-at-long-thanh-dong-nai  /insight/  301
+/insight/from-national-mandate-to-field-action-realizing-the-semiconductor-and-ai-ecosystem-in-dong-nai/  /insight/  301
+/insight/from-national-mandate-to-field-action-realizing-the-semiconductor-and-ai-ecosystem-in-dong-nai  /insight/  301
+/insight/introducing-the-iep-industrial-ecosystem-driving-vietnams-high-tech-infrastructure-forward/  /insight/  301
+/insight/introducing-the-iep-industrial-ecosystem-driving-vietnams-high-tech-infrastructure-forward  /insight/  301
+/wp-content/*          /                   301
+
+# Mọi URL bài spam (uncategorized-en/...) còn lại -> về trang chủ
+/uncategorized-en/*    /                   301

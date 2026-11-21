@@ -1,0 +1,12 @@
+# Cấu hình Cloudflare Pages (dùng với: npx wrangler pages deploy)
+name = "iepvn"
+pages_build_output_dir = "."
+compatibility_date = "2026-11-01"
+
+# Biến không bí mật có thể khai báo ở đây; RESEND_API_KEY / TURNSTILE_SECRET
+# phải đặt bằng: npx wrangler pages secret put RESEND_API_KEY
+# Chatbot chạy trên Worker riêng tại https://chat.iepvn.com (iep-chat)
+
+[vars]
+CONTACT_TO = "CHANGE_ME@iepvn.com"
+CONTACT_FROM = "IEPVN Website <no-reply@iepvn.com>"
